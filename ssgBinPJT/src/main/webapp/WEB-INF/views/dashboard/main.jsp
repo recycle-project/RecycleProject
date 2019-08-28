@@ -143,7 +143,7 @@
 						<div class="row m-t-25" id="bin-1">
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
 								<div class="overview-item">
-									<div class="overview__inner">
+									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
 												<span class="bin-name"></span>
@@ -164,7 +164,7 @@
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
 								<div class="overview-item">
-									<div class="overview__inner">
+									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
 												<span class="bin-name"></span>
@@ -185,7 +185,7 @@
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
 								<div class="overview-item">
-									<div class="overview__inner">
+									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
 												<span class="bin-name"></span>
@@ -193,20 +193,20 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-											<div class="pie-wrapper progress-75 style-2">
-												<span class="label">75%</span>
-												<div class="pie">
-													<div class="left-side half-circle"></div>
-													<div class="right-side half-circle"></div>
-												</div>
-												<div class="shadow"></div>
+										<div class="pie-wrapper progress-75 style-2">
+											<span class="label">75%</span>
+											<div class="pie">
+												<div class="left-side half-circle"></div>
+												<div class="right-side half-circle"></div>
 											</div>
+											<div class="shadow"></div>
 										</div>
+									</div>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
 								<div class="overview-item">
-									<div class="overview__inner">
+									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
 												<span class="bin-name"></span>
@@ -214,62 +214,163 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-											<div class="pie-wrapper progress-95 style-2">
-												<span class="label">95%</span>
-												<div class="pie">
-													<div class="left-side half-circle"></div>
-													<div class="right-side half-circle"></div>
-												</div>
-												<div class="shadow"></div>
+										<div class="pie-wrapper progress-95 style-2">
+											<span class="label">95%</span>
+											<div class="pie">
+												<div class="left-side half-circle"></div>
+												<div class="right-side half-circle"></div>
 											</div>
+											<div class="shadow"></div>
 										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row m-t-25">
-							<div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4" id="ice">
-								<div class="overview-item overview-item--c1">
+						<div class="row m-t-25" id="switch_n"
+							style="padding-left: 7.5px; padding-right: 7.5px;">
+							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 turn-on">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
-											<div class="text">
-												<h2>제빙기</h2>
-											</div>
-											<div class="icon">
-												<i><img src="../resources/bootstrap/images/ice.png" /></i>
+											<div class="text_style">
+												<div>
+													<span>제빙기</span>
+												</div>
+
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4"
-								id="refrigerator">
-								<div class="overview-item overview-item--c1">
+							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 turn-on">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
-											<div class="text">
-												<h2>냉장고</h2>
+											<div class="text_style">
+												<div>
+													<span>냉장고</span>
+												</div>
 											</div>
-											<div class="icon">
-												<i><img src="../resources/bootstrap/images/re.png" /></i>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 turn-off">
+									<div class="overview__inner">
+										<div class="overview-box clearfix">
+											<div class="text_style">
+												<div>
+													<span>전등</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 turn-on">
+									<div class="overview__inner">
+										<div class="overview-box clearfix">
+											<div class="text_style">
+												<div>
+													<span>에어컨</span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row m-t-25" id="switch_y"
+							style="padding-left: 7.5px; padding-right: 7.5px;">
+							<div class="col-3 col-sm-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 ">
+									<div class="overview__inner">
+										<div class="overview-box clearfix">
+											<div class="text_style">
+												<div>
+													<span>제빙기</span>
+												</div>
+												<div>
+													<label class="switch switch-text switch-success">
+														<input type="checkbox" class="switch-input" checked="true">
+														<span data-on="On" data-off="Off" class="switch-label"></span>
+														<span class="switch-handle"></span>
+													</label>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4" id="light">
-								<div class="overview-item overview-item--c4">
+
+							<div class="col-3 col-sm-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 ">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
-											<div class="text">
-												<h2>전등</h2>
-											</div>
-											<div class="icon">
-												<i><img src="../resources/bootstrap/images/light.png" /></i>
+											<div class="text_style">
+												<div>
+													<span>냉장고</span>
+												</div>
+												<div>
+													<label class="switch switch-text switch-success">
+														<input type="checkbox" class="switch-input" checked="true">
+														<span data-on="On" data-off="Off" class="switch-label"></span>
+														<span class="switch-handle"></span>
+													</label>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+
+							<div class="col-3 col-sm-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 ">
+									<div class="overview__inner">
+										<div class="overview-box clearfix">
+											<div class="text_style">
+												<div>
+													<span>전등</span>
+												</div>
+												<div>
+													<label class="switch switch-text switch-success">
+														<input type="checkbox" class="switch-input" checked="true">
+														<span data-on="On" data-off="Off" class="switch-label"></span>
+														<span class="switch-handle"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-3 col-sm-3 col-lg-3 col-xl-3 testsize">
+								<div class="overview-item overview-item--c1 ">
+									<div class="overview__inner">
+										<div class="overview-box clearfix">
+											<div class="text_style">
+												<div>
+													<span>에어컨</span>
+												</div>
+												<div>
+													<label class="switch switch-text switch-success">
+														<input type="checkbox" class="switch-input" checked="true">
+														<span data-on="On" data-off="Off" class="switch-label"></span>
+														<span class="switch-handle"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="row">
 							<div class="col-md-12">
@@ -377,7 +478,16 @@
 			});
 		});
 		
-		
+		$(".turn-on").click(function() {
+			console.log("turn on click");
+			$(this).toggleClass("turn-on");
+			$(this).toggleClass("turn-off");
+		});
+		$(".turn-off").click(function() {
+			console.log("turn off click");
+			$(this).toggleClass("turn-off");
+			$(this).toggleClass("turn-on");
+		});
 		
 	</script>
 </body>
