@@ -151,7 +151,7 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-										<div class="pie-wrapper progress-45 style-2">
+										<div class="pie-wrapper progress-45">
 											<span class="label">45%</span>
 											<div class="pie">
 												<div class="left-side half-circle"></div>
@@ -172,7 +172,7 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-										<div class="pie-wrapper progress-22 style-2">
+										<div class="pie-wrapper progress-22">
 											<span class="label">22%</span>
 											<div class="pie">
 												<div class="left-side half-circle"></div>
@@ -193,7 +193,7 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-										<div class="pie-wrapper progress-75 style-2">
+										<div class="pie-wrapper progress-75">
 											<span class="label">75%</span>
 											<div class="pie">
 												<div class="left-side half-circle"></div>
@@ -214,7 +214,7 @@
 										</div>
 									</div>
 									<div class="set-size charts-container">
-										<div class="pie-wrapper progress-95 style-2">
+										<div class="pie-wrapper progress-95">
 											<span class="label">95%</span>
 											<div class="pie">
 												<div class="left-side half-circle"></div>
@@ -460,7 +460,6 @@
 					dataType : "json"
 				})
 				.done(function(result) {	
-					console.log(result);
 					if (result.length > 4) {
 						floor2 = $("#bin-1").clone();
 						$("#bin-1").after(floor2.attr("id", "bin-2"));
