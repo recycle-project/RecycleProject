@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.sinc.ssgbin.equipment">
+	<select id="list"
+		parameterType="storeVO" 
+		resultType="equipmentVO">
+		SELECT EQUIPMENT_ID, EQUIPMENT_NAME, CATEGORY, CAPACITY, IS_ON, SERIAL_NUMBER, STORE_ID
+		FROM EQUIPMENT
+		WHERE STORE_ID = #{store_id}
+	</select>
+</mapper> 

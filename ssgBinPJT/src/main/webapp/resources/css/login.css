@@ -1,0 +1,56 @@
+body {
+	margin-top : 2rem;
+    font-family: "NanumSquare";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container {
+	margin-top : 1rem;
+	mragin-bottom : 1rem;
+}
+.login-btn, .login-btn:hover {
+	background-color : #006e45;
+	border-color : #006e45;
+}
+a {
+	color : #006e45;
+}
+a:hover {
+	color : #e9ecef;
+}
+.page-title {
+	text-align : center;
+}
+#mainLogo {
+	max-width : 80%;
+}
+.logo {
+	margin-top : 2rem;
+	text-align : center;
+}
+.logo-div {
+	padding-bottom : 1rem;
+}
+.intro-div {
+	font-weight: 100;
+    font-size: 14px;
+}
+.card {
+	border : none;
+}
+.login-btn {
+	padding : 1rem 0rem;
+}
+.form-control {
+	font-weight: 100;
+	border : none;
+	border-bottom : 1px solid #ced4da;
+}
+input[name='pwd'] {
+	font-family : none;
+	font-size : 17px;
+}

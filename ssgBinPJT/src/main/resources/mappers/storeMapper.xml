@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.sinc.ssgbin.store">
+	<select id="list"
+		parameterType="userVO" 
+		resultType="storeVO">
+		SELECT STORE_ID, STORE_NAME, LOCATION, OPEN_TIME, CLOSE_TIME
+		FROM STORE
+		JOIN WORK USING (STORE_ID)
+		WHERE EMPLOYEE_ID = #{employee_id}
+	</select>
+</mapper> 
