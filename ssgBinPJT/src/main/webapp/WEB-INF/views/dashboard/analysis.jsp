@@ -36,6 +36,8 @@
     <link href="../resources/bootstrap/css/theme.css" rel="stylesheet" media="all">
     <link href="../resources/css/dashboard.css" rel="stylesheet" media="all">
 
+	<!-- analysis CSS -->
+	<link href="../resources/css/analysis.css" rel="stylesheet" media="all">
 </head>
 
 <body class="animsition">
@@ -126,6 +128,94 @@
                                 <div class="overview-wrap">
                                     <h2 class="title-1">ANALYSIS</h2>
                                 </div>
+                                <div class="graph-box"><canvas id="garbage-store-bar-1"></canvas></div>
+                                <div class="row m-t-25" style="padding-left: 15px; padding-right: 15px;">
+                                	<div class="row">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+										<div class="overview-item overview-item--c1 nomargin">
+											<div class="overview__inner">
+												<div class="overview-box clearfix">
+													<div class="text_style2">
+														<div>
+															<span></span>
+															<i><img src="../resources/bootstrap/images/can.png" id="can-icon"/></i>
+														</div>
+														<div id="volume">
+															5L
+														</div>
+														<div class="updown">
+															last week 10%
+															<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 nomargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div class="text_style2">
+													<div><span></span>
+														<i><img src="../resources/bootstrap/images/coffee.png" id="coffee-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div class="updown">
+														last week 20%
+														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+								<div class="row">
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 topmargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div class="text_style2">
+													<div><span></span>
+													<i><img src="../resources/bootstrap/images/bottle.png" id="bottle-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div class="updown">
+														last week 30%
+														<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 topmargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div class="text_style2">
+													<div><span></span>
+														<i><img src="../resources/bootstrap/images/ball.jpg" id="ball-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div class="updown">
+														last week 40%
+														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
                             </div>
                         </div>
                         
@@ -166,6 +256,11 @@
     <script src="../resources/bootstrap/vendor/select2/select2.min.js">
     </script>
 
+	<!-- Chart JS -->
+ 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
+	<script src="../resources/bootstrap/js/analysis.js"></script>
+	
     <!-- Main JS-->
     <script src="../resources/bootstrap/js/main.js"></script>
 	<script>

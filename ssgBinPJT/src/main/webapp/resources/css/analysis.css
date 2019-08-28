@@ -1,0 +1,70 @@
+.graph-box{
+	margin-top : 20px;
+}
+
+#garbage-store-bar-1 {
+ 	background-color:#fff;
+ 	border:1px solid black;
+ 	border-radius:10px; 
+ 	width:90vw;
+	height:auto; 
+}
+
+.text_style2 {
+	font-size:15pt;
+	color:#333333;
+	height:100%;
+}
+.text_style2 i{
+	float:right;
+}
+
+#can-icon{
+	max-width: 20%; 
+	
+}
+
+#coffee-icon{
+	max-width: 20%;
+}
+
+#bottle-icon{
+	max-width: 20%; 
+}
+
+#ball-icon{
+	max-width: 19%; 
+}
+
+#volume{
+	font-size:30pt;
+	text-align:center;
+}
+
+.updown{
+	font-size:12pt;
+	color:#666666;
+}
+
+#arrow{
+	max-width:20%;
+}
+
+.testsize2{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.overview-item.overview-item--c1.nomargin{
+	margin-bottom: 0px;
+	padding : 15px;	
+}
+
+.overview-item.overview-item--c1.topmargin{
+	margin-top: 15px;
+	padding : 15px;
+}
+
+#can {
+	text-align:left;
+}
