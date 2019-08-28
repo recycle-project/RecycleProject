@@ -31,7 +31,6 @@ public class DashboardCtrl {
 	@ResponseBody
 	public List<StoreVO> getStore(UserVO user) {
 		System.out.println("DashboardCtrl getStore()");
-		System.out.println(service.getStore(user));
 		return service.getStore(user);
 	}
 	
@@ -39,7 +38,7 @@ public class DashboardCtrl {
 	@ResponseBody
 	public List<EquipmentVO> getStatus(StoreVO store) {
 		System.out.println("DashboardCtrl getStatus()");
-		System.out.println(store);
+		System.out.println(service.getEquipment(store));
 		return service.getEquipment(store);
 	}
 	@RequestMapping("/analysis")
