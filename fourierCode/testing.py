@@ -76,7 +76,7 @@ def changeNote(File, freq, time, spect):
         #유리 1 플라스틱 0
     freArr.sort()
     print("대략적인 결과값 " ,freArr[len(freArr)-3])
-    return temp
+    return freArr[len(freArr)-3]
 
 if __name__ == '__main__':
     f = open("test.txt", "w")
