@@ -24,7 +24,7 @@ nav > div a.nav-item.nav-link.active:after
   bottom: -60px;
   left: -10%;
   border: 15px solid transparent;
-  border-top-color: #2F4F4F;  <!-- 화살표색 -->
+  <!--border-top-color: #2F4F4F;-->  <!-- 화살표색 -->
 }
 .tab-content{
   background: #fdfdfd;
@@ -43,4 +43,10 @@ nav > div a.nav-item.nav-link:focus
     color:#fff;
     border-radius:0;
     transition:background 0.20s linear;
+}
+.nav-pills .nav-link.active{
+	background: #006400; <!-- 클릭시색 --> 
+}
+.nav-pills .nav-link{
+	color:black;
 }
