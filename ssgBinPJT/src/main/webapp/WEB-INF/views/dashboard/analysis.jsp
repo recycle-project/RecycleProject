@@ -154,10 +154,10 @@
 										<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 											<a class="nav-item nav-link active" id="nav-home-tab"
 												data-toggle="tab" href="#nav-home" role="tab"
-												aria-controls="nav-home" aria-selected="true">Home</a> <a
+												aria-controls="nav-home" aria-selected="true">매장</a> <a
 												class="nav-item nav-link" id="nav-profile-tab"
 												data-toggle="tab" href="#nav-profile" role="tab"
-												aria-controls="nav-profile" aria-selected="false">Profile</a>
+												aria-controls="nav-profile" aria-selected="false">아직...</a>
 										</div>
 									</nav>
 									<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -168,19 +168,120 @@
 											<!-- Nav pills -->
 											<ul class="nav nav-pills">
 												<li class="nav-item"><a class="nav-link active"
-													data-toggle="pill" href="#home">Home</a></li>
+													data-toggle="pill" href="#home">전체</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu1">Menu 1</a></li>
+													data-toggle="pill" href="#menu1">매장1</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu2">Menu 2</a></li>
+													data-toggle="pill" href="#menu2">매장2</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu3">Menu 3</a></li>
+													data-toggle="pill" href="#menu3">매장3</a></li>
 													
 											</ul>
 
 											<!-- Tab panes -->
 											<div class="tab-content">
-												<div class="tab-pane container active" id="home">.1.</div>
+												<div class="tab-pane container active" id="home">
+
+<!-- 여기 그래프 -->
+
+수진
+
+                                <div class="graph-box"><canvas id="garbage-store-bar-1"></canvas></div>
+                                <div class="row m-t-25" style="padding-left: 15px; padding-right: 15px;">
+                                	<div class="row">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+										<div class="overview-item overview-item--c1 nomargin">
+											<div class="overview__inner">
+												<div class="overview-box clearfix">
+													<div >
+														<div class="text_style2">
+															<span></span>
+															<i><img src="../resources/bootstrap/images/can.png" id="can-icon"/></i>
+														</div>
+														<div id="volume">
+															<p>5L</p>
+														</div>
+														<div>
+															last week 10%
+															<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 nomargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div >
+													<div class="text_style2"><span></span>
+														<i><img src="../resources/bootstrap/images/coffee.png" id="coffee-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div >
+														last week 20%
+														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+								<div class="row">
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 topmargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div >
+													<div class="text_style2"><span></span>
+													<i><img src="../resources/bootstrap/images/bottle.png" id="bottle-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div  >
+														last week 30%
+														<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
+									<div class="overview-item overview-item--c1 topmargin">
+										<div class="overview__inner">
+											<div class="overview-box clearfix">
+												<div >
+													<div class="text_style2"><span></span>
+														<i><img src="../resources/bootstrap/images/ball.jpg" id="ball-icon"/></i>
+													</div>
+													<div id="volume">
+															5L
+													</div>
+													<div  >
+														last week 40%
+														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+                            </div>
+                        </div>
+
+
+<!-- 그래프 끝... -->
+
+
+												</div>
 												<div class="tab-pane container fade" id="menu1">.2.</div>
 												<div class="tab-pane container fade" id="menu2">.3.</div>
 												<div class="tab-pane container fade" id="menu3">.4.</div>
