@@ -351,6 +351,12 @@
 	<script src="../resources/bootstrap/vendor/select2/select2.min.js">
     </script>
 
+	<!-- Chart JS -->
+ 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
+	<script src="../resources/bootstrap/js/analysis.js"></script>
+
+
 	<!-- Main JS-->
 	<script src="../resources/bootstrap/js/main.js"></script>
 	<script>
