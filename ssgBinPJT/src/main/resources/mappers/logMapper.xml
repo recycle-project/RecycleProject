@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.sinc.ssgbin.log">
+	<select id="list"
+		resultType="logVO">
+		SELECT LOGID, CATEGORY, CONTENTS, TO_CHAR(TIMESTAMP, 'MM-DD HH24:MI:SS') TIMESTAMP, EQUIPMENTID
+		FROM LOG
+		ORDER BY TIMESTAMP DESC
+	</select>
+	
+	<select id="filterlist"
+		parameterType = "String"
+		resultType="logVO">
+		SELECT LOGID, CATEGORY, CONTENTS, TO_CHAR(TIMESTAMP, 'MM-DD HH24:MI:SS') TIMESTAMP, EQUIPMENTID
+		FROM LOG
+		WHERE CATEGORY = #{filter}
+		ORDER BY TIMESTAMP DESC
+	</select>
+</mapper> 

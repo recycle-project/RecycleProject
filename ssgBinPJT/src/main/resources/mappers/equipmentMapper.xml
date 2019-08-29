@@ -9,6 +9,6 @@
 		resultType="equipmentVO">
 		SELECT EQUIPMENT_ID, EQUIPMENT_NAME, CATEGORY, CAPACITY, IS_ON, SERIAL_NUMBER, STORE_ID
 		FROM EQUIPMENT
-		WHERE STORE_ID = #{store_id}
+		WHERE STORE_ID = #{store_id} and category = '쓰레기통'
 	</select>
 </mapper> 
