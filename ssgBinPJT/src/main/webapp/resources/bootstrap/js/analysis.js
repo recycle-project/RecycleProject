@@ -29,7 +29,6 @@ var glp_data = {
  };
 
 var glp_options = {
-
 title	:{
 	display:true,
 	fontSize: 23,
@@ -41,7 +40,7 @@ layout:{
 	padding:{
 		left:70,
 		right:50,
-		bottom: 20
+		bottom: 5
 	}
 },
 
@@ -89,15 +88,16 @@ layout:{
             },
             color: '#000',
             //anchor: 'center',
+            position: 'outside',
+            //anchor: 'center',
             //position: 'outside',
-            anchor: 'center',
             align: 'end',
-            offset: 3,
+            offset: 7,
             font: {
              size: 10,
              style: 'bold'
              //family, style, weight 가능
-            }
+            },
         }
     },
  onComplete: function () {
