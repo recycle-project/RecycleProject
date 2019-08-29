@@ -17,6 +17,7 @@
 }
 .text_style2 i{
 	float:right;
+	margin-bottom:15px;
 }
 	
 #can-icon{
@@ -37,8 +38,9 @@
 }
 
 #volume{
-	font-size:30pt;
+	font-size:25pt;
 	text-align:center;
+	margin-bottom:15px;
 }
 
 .updown{
@@ -54,7 +56,7 @@
 
 .testsize2{
 	padding-left: 15px;
-	padding-right: 15px;
+	padding-right: 1spx;
 }
 
 .overview-item.overview-item--c1.nomargin{

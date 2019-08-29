@@ -57,7 +57,8 @@
 	media="all">
 <link href="../resources/css/dashboard.css" rel="stylesheet" media="all">
 <link href="../resources/css/detail.css" rel="stylesheet" media="all">
-
+<!-- analysis CSS -->
+ <link href="../resources/css/analysis.css" rel="stylesheet" media="all">
 </head>
 
 <body class="animsition">
@@ -154,8 +155,8 @@
 										<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 											<a class="nav-item nav-link active" id="nav-home-tab"
 												data-toggle="tab" href="#nav-home" role="tab"
-												aria-controls="nav-home" aria-selected="true">매장</a> <a
-												class="nav-item nav-link" id="nav-profile-tab"
+												aria-controls="nav-home" aria-selected="true">매장</a> 
+												<a class="nav-item nav-link" id="nav-profile-tab"
 												data-toggle="tab" href="#nav-profile" role="tab"
 												aria-controls="nav-profile" aria-selected="false">아직...</a>
 										</div>
@@ -170,11 +171,11 @@
 												<li class="nav-item"><a class="nav-link active"
 													data-toggle="pill" href="#home">전체</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu1">매장1</a></li>
+													data-toggle="pill" href="#ssg1">매장1</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu2">매장2</a></li>
+													data-toggle="pill" href="#ssg2">매장2</a></li>
 												<li class="nav-item"><a class="nav-link"
-													data-toggle="pill" href="#menu3">매장3</a></li>
+													data-toggle="pill" href="#ssg3">매장3</a></li>
 													
 											</ul>
 
@@ -182,10 +183,7 @@
 											<div class="tab-content">
 												<div class="tab-pane container active" id="home">
 
-<!-- 여기 그래프 -->
-
-수진
-
+								<!-- 여기 그래프 -->
                                 <div class="graph-box"><canvas id="garbage-store-bar-1"></canvas></div>
                                 <div class="row m-t-25" style="padding-left: 15px; padding-right: 15px;">
                                 	<div class="row">
@@ -193,7 +191,7 @@
 										<div class="overview-item overview-item--c1 nomargin">
 											<div class="overview__inner">
 												<div class="overview-box clearfix">
-													<div >
+													<div>
 														<div class="text_style2">
 															<span></span>
 															<i><img src="../resources/bootstrap/images/can.png" id="can-icon"/></i>
@@ -274,17 +272,13 @@
 								</div>
 							</div>
 							</div>
-                            </div>
-                        </div>
-
-
-<!-- 그래프 끝... -->
+                        <!-- 그래프 끝... -->
 
 
 												</div>
-												<div class="tab-pane container fade" id="menu1">.2.</div>
-												<div class="tab-pane container fade" id="menu2">.3.</div>
-												<div class="tab-pane container fade" id="menu3">.4.</div>
+												<div class="tab-pane container fade" id="ssg1">.22.</div>
+												<div class="tab-pane container fade" id="ssg2">.33.</div>
+												<div class="tab-pane container fade" id="ssg3">.44.</div>
 												
 											</div>
 											
