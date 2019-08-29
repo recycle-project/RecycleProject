@@ -18,7 +18,7 @@
 .text_style2 i{
 	float:right;
 }
-
+	
 #can-icon{
 	max-width: 20%; 
 	
@@ -44,11 +44,13 @@
 .updown{
 	font-size:12pt;
 	color:#666666;
-}
-
-#arrow{
+	
 	max-width:20%;
 }
+ 
+#arrow{
+	max-width:18%;
+} 
 
 .testsize2{
 	padding-left: 15px;

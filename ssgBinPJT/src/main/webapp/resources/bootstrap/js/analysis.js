@@ -5,7 +5,7 @@
 var glp_ctx = document.getElementById('garbage-store-bar-1').getContext('2d');
 var glp_data = {
      datasets: [{
-         data: [10, 20, 30, 10],
+         data: [15, 15, 36, 34],
          backgroundColor: [
         	 '#edf8fb', '#b2e2e2', '#66c2a4', '#238b45',
                 'rgba(153, 102, 255, 0.2)',
@@ -36,6 +36,7 @@ title	:{
 	text:'주간 누적 쓰레기량',
 	position: 'top'
 },
+
 layout:{
 	padding:{
 		left:70,
@@ -83,18 +84,52 @@ layout:{
                 dataArr.map(data => {
                     sum += data;
                 });
-                let percentage = (value*100 / sum).toFixed(2)+"%";
+                let percentage = (value*100 / sum).toFixed(1)+"%";
                 return percentage;
             },
             color: '#000',
+            //anchor: 'center',
+            //position: 'outside',
             anchor: 'center',
+            align: 'end',
+            offset: 3,
             font: {
              size: 10,
              style: 'bold'
              //family, style, weight 가능
             }
         }
-    }
+    },
+ onComplete: function () {
+    /* var ctx = this.chart.ctx;
+     ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
+     ctx.textAlign = 'center';
+     ctx.textBaseline = 'bottom';
+
+     this.data.datasets.forEach(function (dataset) {
+
+       for (var i = 0; i < dataset.data.length; i++) {
+         var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model,
+             total = dataset._meta[Object.keys(dataset._meta)[0]].total,
+             mid_radius = model.innerRadius + (model.outerRadius - model.innerRadius)/2,
+             start_angle = model.startAngle,
+             end_angle = model.endAngle,
+             mid_angle = start_angle + (end_angle - start_angle)/2;
+
+         var x = mid_radius * Math.cos(mid_angle);
+         var y = mid_radius * Math.sin(mid_angle);
+
+         ctx.fillStyle = '#fff';
+         if (i == 3){ // Darker text color for lighter background
+           ctx.fillStyle = '#444';
+         }
+         var percent = String(Math.round(dataset.data[i]/total*100)) + "%";*/
+        // ctx.fillText(dataset.data[i]+"%", model.x + x, model.y + y);
+         // Display percent in another line, line break doesn't work for fillText
+         //ctx.fillText(percent, model.x + x, model.y + y + 15);
+       }
+    // });   
+ //}
 };
 var glp_chart = new Chart(glp_ctx, {
     type: 'pie',

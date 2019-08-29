@@ -135,18 +135,18 @@
 										<div class="overview-item overview-item--c1 nomargin">
 											<div class="overview__inner">
 												<div class="overview-box clearfix">
-													<div class="text_style2">
-														<div>
+													<div >
+														<div class="text_style2">
 															<span></span>
 															<i><img src="../resources/bootstrap/images/can.png" id="can-icon"/></i>
 														</div>
 														<div id="volume">
-															5L
+															<p>5L</p>
 														</div>
-														<div class="updown">
+														<div>
 															last week 10%
 															<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
-													</div>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -156,14 +156,14 @@
 									<div class="overview-item overview-item--c1 nomargin">
 										<div class="overview__inner">
 											<div class="overview-box clearfix">
-												<div class="text_style2">
-													<div><span></span>
+												<div >
+													<div class="text_style2"><span></span>
 														<i><img src="../resources/bootstrap/images/coffee.png" id="coffee-icon"/></i>
 													</div>
 													<div id="volume">
 															5L
 													</div>
-													<div class="updown">
+													<div >
 														last week 20%
 														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
 													</div>
@@ -178,14 +178,14 @@
 									<div class="overview-item overview-item--c1 topmargin">
 										<div class="overview__inner">
 											<div class="overview-box clearfix">
-												<div class="text_style2">
-													<div><span></span>
+												<div >
+													<div class="text_style2"><span></span>
 													<i><img src="../resources/bootstrap/images/bottle.png" id="bottle-icon"/></i>
 													</div>
 													<div id="volume">
 															5L
 													</div>
-													<div class="updown">
+													<div  >
 														last week 30%
 														<i><img src="../resources/bootstrap/images/reddown.png" id="arrow"/></i>
 													</div>
@@ -198,14 +198,14 @@
 									<div class="overview-item overview-item--c1 topmargin">
 										<div class="overview__inner">
 											<div class="overview-box clearfix">
-												<div class="text_style2">
-													<div><span></span>
+												<div >
+													<div class="text_style2"><span></span>
 														<i><img src="../resources/bootstrap/images/ball.jpg" id="ball-icon"/></i>
 													</div>
 													<div id="volume">
 															5L
 													</div>
-													<div class="updown">
+													<div  >
 														last week 40%
 														<i><img src="../resources/bootstrap/images/greenup.png" id="arrow"/></i>
 													</div>
