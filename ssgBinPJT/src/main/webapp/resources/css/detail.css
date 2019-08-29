@@ -19,7 +19,7 @@ nav > div a.nav-item.nav-link.active
 
 nav > div a.nav-item.nav-link.active:after
  {
-  content: "";
+  /* content: ""; */
   position: relative;
   bottom: -60px;
   left: -10%;
