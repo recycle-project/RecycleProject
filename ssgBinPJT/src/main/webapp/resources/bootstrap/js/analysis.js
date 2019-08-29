@@ -29,7 +29,7 @@ var glp_data = {
  };
 
 var glp_options = {
-
+maintainAspectRatio: false,
 title	:{
 	display:true,
 	fontSize: 19,
@@ -133,7 +133,7 @@ var glp_chart = new Chart(glp_ctx, {
 
 /*
  * 매장별 차트 #1
- */cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ */
 /*
 var gsb_ctx_1 = document.getElementById('garbage-store-bar-1').getContext('2d');
 var gsb_data_1 = {
