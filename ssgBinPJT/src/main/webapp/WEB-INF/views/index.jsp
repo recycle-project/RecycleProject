@@ -49,15 +49,15 @@
 			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12">
 				<div class="card">
 					<article class="card-body">
-						<form method="post" action="user/login">
+						<form method="post" action="user/login" onsubmit="return sendAndroid(this)">
 						<div class="form-group">
 							<div class="input-group">
-								<input name="employee_name" class="form-control" placeholder="Username" type="text">
+								<input id="employee_name" name="employee_name" class="form-control" placeholder="Username" type="text">
 							</div> <!-- input-group.// -->
 						</div> <!-- form-group// -->
 						<div class="form-group">
 							<div class="input-group">
-							    <input name="pwd" class="form-control" placeholder="Password" type="password">
+							    <input id="pwd" name="pwd" class="form-control" placeholder="Password" type="password">
 							</div> <!-- input-group.// -->
 						</div> <!-- form-group// -->
 						<div class="form-group">
@@ -77,5 +77,13 @@
     <!-- Bootstrap JS-->
     <script src="resources/bootstrap/vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="resources/bootstrap/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+
+	<script>
+      function sendAndroid(form){
+    	  window.Android.getUser(form.employee_name.value, form.pwd.value);
+    	  
+    	  return true;
+      }
+    </script>
 </body>
 </html>

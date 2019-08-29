@@ -26,5 +26,11 @@ public class UserServiceImpl implements UserService{
 		System.out.println(dao.getStore(user));
 		return dao.getStore(user);
 	}
+	
+	@Override
+	public int updateToken(UserVO user) {
+		System.out.println("UserServiceImpl updateToken()");
+		return dao.updateToken(user);
+	}
 
 }

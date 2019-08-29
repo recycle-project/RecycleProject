@@ -10,17 +10,24 @@ CREATE TABLE SPRING_MEM_TBL (
 */
 public class UserVO {
 	private int employee_id;
-	private String employee_name, pwd, position;
+	private String employee_name, pwd, position, token;
 	public UserVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public UserVO(int employee_id, String employee_name, String pwd, String position) {
+	public UserVO(int employee_id, String employee_name, String pwd, String position, String token) {
 		super();
 		this.employee_id = employee_id;
 		this.employee_name = employee_name;
 		this.pwd = pwd;
 		this.position = position;
+		this.token = token;
+	}
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
 	}
 	public int getEmployee_id() {
 		return employee_id;
@@ -49,6 +56,6 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [employee_id=" + employee_id + ", employee_name=" + employee_name + ", pwd=" + pwd
-				+ ", position=" + position + "]";
+				+ ", position=" + position + ", token=" +token + "]";
 	}
 }
