@@ -150,7 +150,7 @@
                                             <div class="dropDownSelect2"></div>
                                         </div>
                                         
-                                        <button class="au-btn-filter" id="filterBtn">필터</button>
+                                        <button class="au-btn-filter" id="filterBtn">검색</button>
                                     </div>
                                     
                                 </div>

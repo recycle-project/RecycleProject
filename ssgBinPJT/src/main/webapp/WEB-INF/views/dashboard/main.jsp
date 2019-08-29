@@ -142,7 +142,7 @@
 						</div>
 						<div class="row m-t-25" id="bin-1">
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-								<div class="overview-item">
+								<div class="overview-item bin-card">
 									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
@@ -163,7 +163,7 @@
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-								<div class="overview-item">
+								<div class="overview-item bin-card">
 									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
@@ -184,7 +184,7 @@
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-								<div class="overview-item">
+								<div class="overview-item bin-card">
 									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">
@@ -205,7 +205,7 @@
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-								<div class="overview-item">
+								<div class="overview-item bin-card">
 									<div class="overview__inner chart">
 										<div class="overview-box clearfix">
 											<div class="text">

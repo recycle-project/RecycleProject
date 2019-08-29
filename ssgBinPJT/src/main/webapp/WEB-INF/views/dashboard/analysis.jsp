@@ -57,8 +57,7 @@
 	media="all">
 <link href="../resources/css/dashboard.css" rel="stylesheet" media="all">
 <link href="../resources/css/detail.css" rel="stylesheet" media="all">
-<!-- analysis CSS -->
-<link href="../resources/css/analysis.css" rel="stylesheet" media="all">
+
 </head>
 
 <body class="animsition">
@@ -155,10 +154,10 @@
 									<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 										<a class="nav-item nav-link active" id="nav-home-tab"
 											data-toggle="tab" href="#nav-home" role="tab"
-											aria-controls="nav-home" aria-selected="true">매장</a> <a
+											aria-controls="nav-home" aria-selected="true">Home</a> <a
 											class="nav-item nav-link" id="nav-profile-tab"
 											data-toggle="tab" href="#nav-profile" role="tab"
-											aria-controls="nav-profile" aria-selected="false">아직...</a>
+											aria-controls="nav-profile" aria-selected="false">Profile</a>
 									</div>
 								</nav>
 								<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -169,128 +168,22 @@
 										<!-- Nav pills -->
 										<ul class="nav nav-pills">
 											<li class="nav-item"><a class="nav-link active"
-												data-toggle="pill" href="#home">전체</a></li>
+												data-toggle="pill" href="#home">Home</a></li>
 											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg1">매장1</a></li>
+												data-toggle="pill" href="#menu1">Menu 1</a></li>
 											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg2">매장2</a></li>
+												data-toggle="pill" href="#menu2">Menu 2</a></li>
 											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg3">매장3</a></li>
+												data-toggle="pill" href="#menu3">Menu 3</a></li>
 
 										</ul>
 
 										<!-- Tab panes -->
 										<div class="tab-content">
-											<div class="tab-pane container active" id="home">
-
-												<!-- 여기 그래프 -->
-												<div class="graph-box">
-													<canvas id="garbage-store-bar-1"></canvas>
-												</div>
-												<div class="row m-t-25"
-													style="padding-left: 15px; padding-right: 15px;">
-													<div class="row">
-														<div
-															class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
-															<div class="overview-item overview-item--c1 nomargin">
-																<div class="overview__inner">
-																	<div class="overview-box clearfix">
-																		<div>
-																			<div class="text_style2">
-																				<span></span> <i><img
-																					src="../resources/bootstrap/images/can.png"
-																					id="can-icon" /></i>
-																			</div>
-																			<div id="volume">
-																				<p>5L</p>
-																			</div>
-																			<div>
-																				last week 10% <i><img
-																					src="../resources/bootstrap/images/reddown.png"
-																					id="arrow" /></i>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div
-															class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
-															<div class="overview-item overview-item--c1 nomargin">
-																<div class="overview__inner">
-																	<div class="overview-box clearfix">
-																		<div>
-																			<div class="text_style2">
-																				<span></span> <i><img
-																					src="../resources/bootstrap/images/coffee.png"
-																					id="coffee-icon" /></i>
-																			</div>
-																			<div id="volume">5L</div>
-																			<div>
-																				last week 20% <i><img
-																					src="../resources/bootstrap/images/greenup.png"
-																					id="arrow" /></i>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div
-															class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
-															<div class="overview-item overview-item--c1 topmargin">
-																<div class="overview__inner">
-																	<div class="overview-box clearfix">
-																		<div>
-																			<div class="text_style2">
-																				<span></span> <i><img
-																					src="../resources/bootstrap/images/bottle.png"
-																					id="bottle-icon" /></i>
-																			</div>
-																			<div id="volume">5L</div>
-																			<div>
-																				last week 30% <i><img
-																					src="../resources/bootstrap/images/reddown.png"
-																					id="arrow" /></i>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div
-															class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 testsize2">
-															<div class="overview-item overview-item--c1 topmargin">
-																<div class="overview__inner">
-																	<div class="overview-box clearfix">
-																		<div>
-																			<div class="text_style2">
-																				<span></span> <i><img
-																					src="../resources/bootstrap/images/ball.jpg"
-																					id="ball-icon" /></i>
-																			</div>
-																			<div id="volume">5L</div>
-																			<div>
-																				last week 40% <i><img
-																					src="../resources/bootstrap/images/greenup.png"
-																					id="arrow" /></i>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- 그래프 끝... -->
-
-
-											</div>
-											<div class="tab-pane container fade" id="ssg1">.22.</div>
-											<div class="tab-pane container fade" id="ssg2">.33.</div>
-											<div class="tab-pane container fade" id="ssg3">.44.</div>
+											<div class="tab-pane container active" id="home">.1.</div>
+											<div class="tab-pane container fade" id="menu1">.2.</div>
+											<div class="tab-pane container fade" id="menu2">.3.</div>
+											<div class="tab-pane container fade" id="menu3">.4.</div>
 
 										</div>
 
@@ -305,14 +198,11 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-12">
 					<div class="copyright">
-						<p>
-							Copyright © 2018 Colorlib. All rights reserved. Template by <a
-								href="https://colorlib.com">Colorlib</a>.
-						</p>
+						<p>Copyright © 2019 Shinsegae I&C Internship Team 3. All
+							rights reserved.</p>
 					</div>
 				</div>
 			</div>
@@ -352,13 +242,6 @@
 	<script src="../resources/bootstrap/vendor/chartjs/Chart.bundle.min.js"></script>
 	<script src="../resources/bootstrap/vendor/select2/select2.min.js">
     </script>
-
-	<!-- Chart JS -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
-	<script src="../resources/bootstrap/js/analysis.js"></script>
-
 
 	<!-- Main JS-->
 	<script src="../resources/bootstrap/js/main.js"></script>
