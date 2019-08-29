@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>	
+		<typeAlias type="com.sinc.ssgbin.user.model.vo.UserVO" alias="userVO"/>	
+		<typeAlias type="com.sinc.ssgbin.store.model.vo.StoreVO" alias="storeVO"/>	
+		<typeAlias type="com.sinc.ssgbin.equipment.model.vo.EquipmentVO" alias="equipmentVO"/>	
+	</typeAliases>
+</configuration>
+
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -11,3 +25,4 @@
 	</typeAliases>
 </configuration>
 
+>>>>>>> e12973a002e7dd952538e18d6920b80056be9a02
