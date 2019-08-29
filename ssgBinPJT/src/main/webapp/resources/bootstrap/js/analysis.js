@@ -79,7 +79,7 @@ layout:{
  plugins: {
   datalabels: {
             formatter: (value, ctx) => {
-                let sum = 0;
+                                                                                                                  xxxxx                let sum = 0;
                 let dataArr = ctx.chart.data.datasets[0].data;
                 dataArr.map(data => {
                     sum += data;
@@ -88,11 +88,10 @@ layout:{
                 return percentage;
             },
             color : '#000',
-            //anchor : 'center',
-            //position : 'outside',
             anchor : 'center',
-//            align : 'center',
-//            offset: 10,
+            position : 'outside',
+            align : 'center',
+//            offset: 1,
             font : {
              size :10,
              style : 'bold'
@@ -135,7 +134,7 @@ var glp_chart = new Chart(glp_ctx, {
 
 /*
  * 매장별 차트 #1
- */
+ */cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 /*
 var gsb_ctx_1 = document.getElementById('garbage-store-bar-1').getContext('2d');
 var gsb_data_1 = {
