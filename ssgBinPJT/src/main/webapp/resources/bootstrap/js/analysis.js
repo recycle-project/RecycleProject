@@ -79,7 +79,7 @@ layout:{
  plugins: {
   datalabels: {
             formatter: (value, ctx) => {
-                                                                                                                  xxxxx                let sum = 0;
+                let sum = 0;
                 let dataArr = ctx.chart.data.datasets[0].data;
                 dataArr.map(data => {
                     sum += data;
