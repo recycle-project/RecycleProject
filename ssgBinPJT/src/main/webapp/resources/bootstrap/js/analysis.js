@@ -45,7 +45,6 @@ layout:{
 	}
 },
 
-
  legend: {	
   display: true,
         labels: {
