@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .graph-box {
 	margin-top: 20px;
 }
@@ -74,4 +75,108 @@
 
 .per{
 	font-size : 10pt;
+=======
+.graph-box {
+	margin-top: 20px;
+}
+
+#garbage-store-bar-1 {
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 90vw;
+	height: auto;
+}
+
+.text_style2 {
+	font-size: 15pt;
+	color: #333333;
+	height: 100%;
+}
+
+.text_style2 i {
+	float: right;
+	margin-bottom: 15px;
+}
+
+#can-icon {
+	max-width: 20%;
+}
+
+#coffee-icon {
+	max-width: 20%;
+}
+
+#bottle-icon {
+	max-width: 20%;
+}
+
+#ball-icon {
+	max-width: 19%;
+}
+
+#volume {
+	font-size: 25pt;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.updown {
+	font-size: 12pt;
+	color: #666666;
+	max-width: 20%;
+}
+
+#arrow {
+	max-width: 18%;
+}
+
+.testsize2 {
+	padding-left: 15px;
+	padding-right: 1spx;
+}
+
+.overview-item.overview-item--c1.nomargin {
+	margin-bottom: 0px;
+	padding: 15px;
+}
+
+.overview-item.overview-item--c1.topmargin {
+	margin-top: 15px;
+	padding: 15px;
+}
+
+#can {
+	text-align: left;
+}
+
+/* REPORT CARD */
+.report-card {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 0.75rem;
+	border: 1px solid #006e45;
+	border-radius: 10px;
+}
+
+.report-card-header {
+	margin: 0;
+	padding: 0;
+	font-size: larger;
+}
+
+.report-card-body {
+	margin: 0;
+	padding: 0;
+}
+
+.report-card-content {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+}
+
+.report-card-icon {
+	text-align: center;
+>>>>>>> a9b73a233a101b347ab0a29d9e8c9ec0f57a07ac
 }
