@@ -41,7 +41,7 @@ layout:{
 	padding:{
 		left:70,
 		right:50,
-		bottom: 20
+		bottom: 10
 	}
 },
 
