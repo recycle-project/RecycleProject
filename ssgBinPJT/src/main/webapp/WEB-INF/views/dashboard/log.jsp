@@ -165,7 +165,7 @@
 											<tr>
 												<th>#</th>
 												<th>구분</th>
-												<th>내용</th>
+												<th style="width: 30%">내용</th>
 												<th>시간</th>
 											</tr>
 										</thead>
@@ -179,9 +179,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="copyright">
-									<p>
-										Copyright © 2019 Shinsegae I&C Internship Team 3. All rights reserved.
-									</p>
+									
 								</div>
 							</div>
 						</div>
