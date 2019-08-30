@@ -95,7 +95,7 @@ public class FCMCtrl {
 			System.out.println("push: store="+push.get("STORE_NAME")+", equip="+push.get("CATEGORY"));
 			
 			// send push notification to users
-			int result = 1; // fcmService.sendNotification(users, push);
+			int result = fcmService.sendNotification(users, push); // fcmService.sendNotification(users, push);
 			if(result == 1) {
 				// 푸시 성공
 			} else {
