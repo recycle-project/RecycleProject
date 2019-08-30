@@ -11,11 +11,8 @@
 		FROM EMPLOYEE
 		WHERE EMPLOYEE_NAME = #{employee_name} AND PWD = #{pwd}
 	</select>
-<<<<<<< HEAD
-=======
 	<update id="updateToken"
 		parameterType="userVO">
 		UPDATE EMPLOYEE SET TOKEN=#{token} WHERE EMPLOYEE_NAME = #{employee_name} AND PWD=#{pwd}
 	</update>
->>>>>>> e12973a002e7dd952538e18d6920b80056be9a02
 </mapper> 

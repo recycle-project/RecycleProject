@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 Manifest-Version: 1.0
-Built-By: p90k6s
+Built-By: p90k64
 Build-Jdk: 1.8.0_20
 Created-By: Maven Integration for Eclipse
 
-=======
-Manifest-Version: 1.0
-Built-By: p90k6l
-Build-Jdk: 1.8.0_20
-Created-By: Maven Integration for Eclipse
-
->>>>>>> 14741f24f90d68dfbf8871a8eca83630dc5f2a35
