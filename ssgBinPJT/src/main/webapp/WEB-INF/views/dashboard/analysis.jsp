@@ -204,7 +204,7 @@
 																			<div id="volume">
 																				<p>5L</p>
 																			</div>
-																			<div>
+																			<div class="per">
 																				last week 10% <i><img
 																					src="../resources/bootstrap/images/reddown.png"
 																					id="arrow" /></i>
@@ -226,7 +226,7 @@
 																					id="coffee-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 20% <i><img
 																					src="../resources/bootstrap/images/greenup.png"
 																					id="arrow" /></i>
@@ -250,7 +250,7 @@
 																					id="bottle-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 30% <i><img
 																					src="../resources/bootstrap/images/reddown.png"
 																					id="arrow" /></i>
@@ -272,7 +272,7 @@
 																					id="ball-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 40% <i><img
 																					src="../resources/bootstrap/images/greenup.png"
 																					id="arrow" /></i>

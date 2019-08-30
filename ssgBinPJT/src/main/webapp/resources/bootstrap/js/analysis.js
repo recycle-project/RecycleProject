@@ -50,7 +50,7 @@ layout:{
         labels: {
            fontColor: '#666666',
            fontFamily: 'sans-serif',
-           fontSize: 8,
+           fontSize: 12,
            fontStyle: 'bold',
            boxWidth: 20,
            padding : 13
