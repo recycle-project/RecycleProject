@@ -3,18 +3,18 @@ package com.sinc.ssgbin.log.model.vo;
 public class LogVO {
 	private int logId;
 	private String category, contents, timestamp;
-	private int equiment_id;
+	private int equipment_id;
 	
 	public LogVO() {
 		super();
 	}
-	public LogVO(int logId, String category, String contents, String timestamp, int equiment_id) {
+	public LogVO(int logId, String category, String contents, String timestamp, int equipment_id) {
 		super();
 		this.logId = logId;
 		this.category = category;
 		this.contents = contents;
 		this.timestamp = timestamp;
-		this.equiment_id = equiment_id;
+		this.equipment_id = equipment_id;
 	}
 	
 	public int getLogId() {
@@ -41,16 +41,16 @@ public class LogVO {
 	public void setTimestamp(String timestamp) {
 		this.timestamp = timestamp;
 	}
-	public int getEquiment_id() {
-		return equiment_id;
+	public int getEquipment_id() {
+		return equipment_id;
 	}
-	public void setEquiment_id(int equiment_id) {
-		this.equiment_id = equiment_id;
+	public void setEquipment_id(int equipment_id) {
+		this.equipment_id = equipment_id;
 	}
 	
 	@Override
 	public String toString() {
 		return "LogVO [logId=" + logId + ", category=" + category + ", contents=" + contents + ", timestamp="
-				+ timestamp + ", equiment_id=" + equiment_id + "]";
+				+ timestamp + ", equiment_id=" + equipment_id + "]";
 	}
 }

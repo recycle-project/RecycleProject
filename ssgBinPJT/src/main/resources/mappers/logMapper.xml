@@ -19,4 +19,9 @@
 		WHERE CATEGORY = #{filter}
 		ORDER BY TIMESTAMP DESC
 	</select>
+	
+	<insert id="writeLog"
+		parameterType = "logVO">
+		INSERT INTO LOG VALUES (LOG_ID_SEQ.NEXTVAL, #{category}, #{contents}, SYSDATE, #{equipment_id})
+	</insert>
 </mapper> 

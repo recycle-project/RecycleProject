@@ -28,4 +28,9 @@ public class EquipmentServiceImpl implements EquipmentService {
 		return dao.getPushContentWithEquipId(equip);
 	}
 
+	@Override
+	public EquipmentVO getEquipmentWithId(int id) {
+		System.out.println("EquipmentServiceImpl getEquipmentWithId()");
+		return dao.getEquipmentWithId(id);
+	}
 }

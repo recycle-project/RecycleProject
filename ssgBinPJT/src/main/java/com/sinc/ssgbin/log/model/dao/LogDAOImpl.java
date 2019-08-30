@@ -26,4 +26,10 @@ public class LogDAOImpl implements LogDAO {
 		return session.selectList("com.sinc.ssgbin.log.filterlist", filter);
 	}	
 	
+	@Override
+	public int writeLog(LogVO log) {
+		System.out.println("LogDAOImpl writeLog()");
+		return session.insert("com.sinc.ssgbin.log.writeLog", log);
+	}
+	
 }
