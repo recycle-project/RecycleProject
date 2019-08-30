@@ -29,8 +29,6 @@ nav > div a.nav-item.nav-link.active:after
   background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
-    <!-- border-top:5px solid #4169E1;-->
-    <!-- border-bottom:5px solid #4169E1;-->
     padding:30px 25px;
 }
 
@@ -48,4 +46,41 @@ nav > div a.nav-item.nav-link:focus
 }
 .nav-pills .nav-link{
 	color:black;
+}
+#tab-panes {
+	padding : 0;
+	border: none;
+	border-top : 1px solid #ddd;
+}
+#nav-tabContent {
+	padding : 0 !important; 
+}
+.nav-pills .nav-link {
+	border-radius : 0;
+}
+#subtab .nav-link {
+	padding: 0.5rem 0.75rem;
+}
+.report-card-icon {
+	line-height : 100%;
+    vertical-align:middle;
+}
+.report-card-icon img {
+	max-width:80%;
+	max-height:auto;
+    vertical-align:middle;
+}
+.report-card-class {
+	padding : 0.5rem;
+	border-top : 1px solid #ddd;
+}
+.report-card-class:last-child {
+	border-bottom : 1px solid #ddd;
+}
+.report-card {
+	display : grid;
+	grid-template-columns : 3fr 1fr;
+}
+.report-card-icon {
+	grid-row : span 2;
 }

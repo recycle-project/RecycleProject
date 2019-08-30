@@ -22,6 +22,11 @@ import com.sinc.ssgbin.user.service.UserService;
 @Controller
 @RequestMapping("/dashboard")
 public class DashboardCtrl {
+	private int[] store5NumArr = {1,2,3,4};
+	private int[] store6NumArr = {3,2,2,3};
+	private int[] store7NumArr = {10,40,25,25};
+	private int[] store8NumArr = {25,25,25,25};
+	
 	@Resource(name="dashboardService")
 	private DashboardService service;
 	@Resource(name="logService")
@@ -88,5 +93,24 @@ public class DashboardCtrl {
 		}
 		System.out.println(result);
 		return result;
+	}
+	@RequestMapping("/data")
+	@ResponseBody
+	public int[] getData(String storeId) {
+		if (storeId.equals("5")) {
+			return store5NumArr;
+		} else if (storeId.equals("6")) {
+			return store6NumArr;
+		} else if (storeId.equals("7")) {
+			return store7NumArr;
+		} else if (storeId.equals("8")) {
+			return store8NumArr;
+		} else {
+			int [] resultNumArr = new int[4];
+			for(int i = 0; i < resultNumArr.length; i++) {
+				resultNumArr[i] = store5NumArr[i] + store6NumArr[i] + store7NumArr[i] + store8NumArr[i];
+			}
+			return resultNumArr;
+		}
 	}
 }

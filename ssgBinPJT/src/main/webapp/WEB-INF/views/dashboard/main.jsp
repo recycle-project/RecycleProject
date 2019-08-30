@@ -295,9 +295,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="copyright">
-									<p>
-										Copyright © 2019 Shinsegae I&C Internship Team 3. All rights reserved.
-									</p>
+									
 								</div>
 							</div>
 						</div>
@@ -382,6 +380,7 @@
 					if (result.length > 4) {
 						floor2 = $("#bin-1").clone();
 						$("#bin-1").after(floor2.attr("id", "bin-2"));
+						$("#bin-1").after("<hr class='trash-hr'>");
 					} else  {
 						
 					}

@@ -7,7 +7,7 @@
 <!-- Required meta tagss-->
 <meta charset="UTF-8">
 <meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="au theme template">
 <meta name="author" content="Hau Nguyen">
 <meta name="keywords" content="au theme template">
@@ -167,20 +167,13 @@
 
 										<!-- 첫번째 내용 -->
 										<!-- Nav pills -->
-										<ul class="nav nav-pills">
-											<li class="nav-item"><a class="nav-link active"
-												data-toggle="pill" href="#home">전체</a></li>
-											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg1">매장1</a></li>
-											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg2">매장2</a></li>
-											<li class="nav-item"><a class="nav-link"
-												data-toggle="pill" href="#ssg3">매장3</a></li>
+										<ul class="nav nav-pills nav-fill" id="subtab">
+											
 
 										</ul>
 
 										<!-- Tab panes -->
-										<div class="tab-content">
+										<div class="tab-content" id="tab-panes">
 											<div class="tab-pane container active" id="home">
 
 												<!-- 여기 그래프 -->
@@ -288,9 +281,7 @@
 
 
 											</div>
-											<div class="tab-pane container fade" id="ssg1">.22.</div>
-											<div class="tab-pane container fade" id="ssg2">.33.</div>
-											<div class="tab-pane container fade" id="ssg3">.44.</div>
+											
 
 										</div>
 
@@ -303,61 +294,47 @@
 
 
 										<!-- Report-card -->
-										<div class="report-card" style="margin-top: 0;">
+										<div class="report-card-class reoport-card-date">2019년 8월 30일</div>
+										<div class="report-card-class report-card">
 											<div class="report-card-header">[분석] 8월 4주차 주간 리포트</div>
-											<div class="row report-card-body">
-												<div
-													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
-													이번 주는 캔 배출이 조금 많은 편이네요!</div>
-												<div
-													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
-													<i><img src="../resources/bootstrap/images/can.png" /></i>
-												</div>
+											<div class="report-card-icon">
+												<img src="../resources/bootstrap/images/can-gray.png" />
+											</div>
+											<div class="report-card-content">
+													이번 주는 캔 배출이 조금 많은 편이네요!
 											</div>
 										</div>
-
-										<div class="report-card">
+										
+										<div class="report-card-class reoport-card-date">2019년 8월 29일</div>
+										<div class="report-card-class report-card">
 											<div class="report-card-header">[분석] 배출량 감소 목표치</div>
-											<div class="row report-card-body">
-												<div
-													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
-													목표치에 맞추려면 하루에 20L씩 배출 필요<br> 이 추세라면 이번 달 배출량 423L 예상
-												</div>
-												<div
-													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
-													<i><img
-														src="../resources/bootstrap/images/report_bar.png" /></i>
-												</div>
+											<div class="report-card-icon">
+												<img
+													src="../resources/bootstrap/images/bar-gray.png" />
+											</div>
+											<div class="report-card-content">
+												목표치에 맞추려면 하루에 20L씩 배출 필요<br> 이 추세라면 이번 달 배출량 423L 예상
 											</div>
 										</div>
 
-										<div class="report-card">
+										<div class="report-card-class report-card">
 											<div class="report-card-header">[분석] SSG BIN 비움 주기</div>
-											<div class="row report-card-body">
-												<div
-													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
-													아주 좋습니다!<br> 담당 구역 매장들의 일 평균 SSG BIN 비움 횟수는 2.4회 입니다.
-												</div>
-												<div
-													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
-													<i><img
-														src="../resources/bootstrap/images/report_trash.png" /></i>
-												</div>
+											<div class="report-card-icon">
+												<img src="../resources/bootstrap/images/bin-gray.png" />
+											</div>
+											<div class="report-card-content">
+												아주 좋습니다!<br> 담당 구역 매장들의 일 평균 SSG BIN 비움 횟수는 2.4회 입니다.
 											</div>
 										</div>
-
-										<div class="report-card" style="margin-top: 0;">
+										
+										<div class="report-card-class reoport-card-date">2019년 8월 27일</div>
+										<div class="report-card-class report-card">
 											<div class="report-card-header">[정보] 스타벅스 친환경 경영 선언</div>
-											<div class="row report-card-body">
-												<div
-													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
-													"열심히 일한 플라스틱 빨대, 떠나라!"</div>
-												<div
-													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
-													<i><img
-														src="../resources/bootstrap/images/report_paper.png" /></i>
-												</div>
+											<div class="report-card-icon">
+												<img src="../resources/bootstrap/images/post-gray.png" />
 											</div>
+											<div class="report-card-content">
+												"열심히 일한 플라스틱 빨대, 떠나라!"</div>
 										</div>
 
 
@@ -372,10 +349,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyright">
-							<p>
-								Copyright © 2018 Colorlib. All rights reserved. Template by <a
-									href="https://colorlib.com">Colorlib</a>.
-							</p>
+						
 						</div>
 					</div>
 				</div>
@@ -417,16 +391,21 @@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
-	<script src="../resources/bootstrap/js/analysis.js"></script>
-
-
+	
 	<!-- Main JS-->
 	<script src="../resources/bootstrap/js/main.js"></script>
+
+	
 	<script>
 		var storeID;
+		var storeId = "all";
+		var storeNameArr = [];
+		
 		$(document).ready(function() {
 			$("#navbar-sidebar").empty();
 			$("#navbar-mobile-list").empty();
+			$("#subtab").empty();
+			$("#subtab").append("<li class='nav-item'><a class='nav-link active' data-toggle='pill' href='#' id='all'>전체</a></li>");
 			$.ajax({
 				url : "/ssgBin/dashboard/list",
 				data : {employee_id : ${user.employee_id}},
@@ -434,9 +413,13 @@
 				dataType : "json"
 			})
 			.done(function(result) {
+				storeNameArr = ["전체"];
 				$.each(result, function(idx, item) {
 					$("#navbar-sidebar").append("<li><a href='main?id="+item.store_id+"' id='"+item.store_id+"'>"+item.store_name+"</a></li>");
 					$("#navbar-mobile-list").append("<li><a href='main?id="+item.store_id+"' id=m'"+item.store_id+"'>"+item.store_name+"</a></li>");
+					storeNameArr.push(item.store_name);
+					$("#subtab").append("<li class='nav-item'><a class='nav-link' data-toggle='pill' href='#' id='store"+item.store_id+"'>"+ item.store_name.substr(0, 3) +".."+"</a></li>");
+					
 				});
 				
 				
@@ -454,33 +437,55 @@
 					storeID = $("#navbar-sidebar li:first-child").children().attr("id");
 					$("#navbar-sidebar li:first-child").addClass("active");
 				}
-				$.ajax({
-					url : "/ssgBin/dashboard/status",
-					data : {store_id : storeID},
-					method : "POST",
-					dataType : "json"
-				})
-				.done(function(result) {	
-					console.log(result);
-					if (result.length > 4) {
-						floor2 = $("#bin-1").clone();
-						$("#bin-1").after(floor2.attr("id", "bin-2"));
-					} else  {
-						
-					}
-					$.each(result, function(idx, item) {
-						$(".overview-item").each(function(idx2, item2) {
-							if (idx == idx2) {
-								$(item2).find("span").text(item.equipment_name);
-							}
-						});
+				
+				 $("#subtab .nav-link").click(function() {
+					var clickedLink = $(this);
+					storeId = $(this).attr("id");
+					storeId = storeId.substr(5);
+					var clickedLinkIdx;
+					
+					$("#subtab .nav-link").each(function(idx, item) {
+						if ($(item).text() == $(clickedLink).text()) {
+							clickedLinkIdx = idx;
+						}
 					});
-				});
+					$("#subtab .nav-link").each(function(idx, item) {
+						if (idx != 0) {
+							if (idx == clickedLinkIdx) {
+								$(item).text(storeNameArr[idx]);
+							} else {
+								$(item).text(storeNameArr[idx].substr(0, 3) + "..");
+							}
+						} 
+					});
+					$.ajax({
+						url : "/ssgBin/dashboard/data",
+						data : {storeId : storeId},
+						method : "GET",
+						dataType : "json"
+					})
+					.done(function(result) {
+						console.log(result);
+						recptData = result;
+						console.log(recptData);
+						makeGraph(recptData);
+					});
+				}); 	
 			});
+			
 		});
 		
 		
-		
+	</script>
+	<script src="../resources/bootstrap/js/analysis.js"></script>
+	<script>
+		$("#nav-profile-tab").click(function() {
+			setTimeout(function() {
+				$(".report-card-icon").each(function(idx, item) {
+					$(item).attr("style", "line-height:" + $(item).height()+"px");
+				});}, 300);
+			
+		});
 	</script>
 </body>
 
