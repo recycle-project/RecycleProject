@@ -28,4 +28,11 @@ public class EquipmentServiceImpl implements EquipmentService {
 		return dao.getPushContentWithEquipId(equip);
 	}
 
+	@Override
+	public void updateCapacity(EquipmentVO equip) {
+		// TODO Auto-generated method stub
+		System.out.println("EquipmentServiceImpl updateCapacity");
+		dao.updateCapacity(equip);
+	}
+
 }

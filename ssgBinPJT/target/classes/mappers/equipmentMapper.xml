@@ -31,4 +31,8 @@
 		USING (STORE_ID)
 		WHERE EQUIPMENT_ID = #{equipment_id}
 	</select>
+	<update id="updatecapacity"
+		parameterType="equipmentVO">
+		UPDATE EQUIPMENT SET CAPACITY = #{capacity} WHERE EQUIPMENT_ID = #{equipment_id} 	
+	</update>
 </mapper> 
