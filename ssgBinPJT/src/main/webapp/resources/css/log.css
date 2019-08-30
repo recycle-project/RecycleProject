@@ -1,15 +1,18 @@
 .table-earning thead th, .table-earning tbody td {
-	padding-left : 15px;
-	padding-right : 15px;	
+	padding-left : 13px;
+	padding-right : 4px;	
+	font-size: 14px;
 }
 .table-earning thead th {
 	background-color : #006e45;
+
 }
 @media (max-width: 767px) {
 	.rs-select2--light {
 	    display: inline-block !important;
 	}
 }
+
 .table-data__tool {
     margin-bottom: 0;
 }

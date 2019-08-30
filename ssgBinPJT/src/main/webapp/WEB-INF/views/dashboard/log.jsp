@@ -165,7 +165,7 @@
 											<tr>
 												<th>#</th>
 												<th>구분</th>
-												<th>내용</th>
+												<th style="width:30%">내용</th>
 												<th>시간</th>
 											</tr>
 										</thead>
@@ -252,7 +252,7 @@
 				$("#logTable").find("tbody").empty();
 				var i = 1;
 				$.each(result, function(idx, item) {
-					$("#logTable").find("tbody").append("<tr><td>"+i+"</td><td>"+item.category+"</td><td>"+item.contents+"</td><td>"+item.timestamp+"</td></tr>");
+					$("#logTable").find("tbody").append("<tr><td>"+i+"</td><td>"+item.category+"</td><td style='width:30%'>"+item.contents+"</td><td>"+item.timestamp+"</td></tr>");
 					i++;
 				});
 			});
