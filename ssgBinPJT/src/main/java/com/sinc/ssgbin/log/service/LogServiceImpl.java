@@ -26,4 +26,9 @@ public class LogServiceImpl implements LogService {
 		return dao.getLog(filter);
 	}
 
+	@Override
+	public int writeLog(LogVO log) {
+		System.out.println("LogServiceImpl writeLog()");
+		return dao.writeLog(log);
+	}
 }

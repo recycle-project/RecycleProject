@@ -7,4 +7,5 @@ import com.sinc.ssgbin.log.model.vo.LogVO;
 public interface LogService {
 	public List<LogVO> getLog();
 	public List<LogVO> getSsgbinList(String filter);
+	public int writeLog(LogVO log);
 }

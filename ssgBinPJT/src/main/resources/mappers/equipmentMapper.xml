@@ -31,4 +31,11 @@
 		USING (STORE_ID)
 		WHERE EQUIPMENT_ID = #{equipment_id}
 	</select>
+	<select id="get"
+		parameterType="Integer"
+		resultType="equipmentVO">
+		SELECT *
+		FROM EQUIPMENT
+		WHERE EQUIPMENT_ID = #{equipment_id}
+	</select>
 </mapper> 
