@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-<!-- Required meta tags-->
+<!-- Required meta tagss-->
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -158,7 +158,7 @@
 											aria-controls="nav-home" aria-selected="true">매장</a> <a
 											class="nav-item nav-link" id="nav-profile-tab"
 											data-toggle="tab" href="#nav-profile" role="tab"
-											aria-controls="nav-profile" aria-selected="false">아직...</a>
+											aria-controls="nav-profile" aria-selected="false">REPORT</a>
 									</div>
 								</nav>
 								<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -204,7 +204,7 @@
 																			<div id="volume">
 																				<p>5L</p>
 																			</div>
-																			<div>
+																			<div class="per">
 																				last week 10% <i><img
 																					src="../resources/bootstrap/images/reddown.png"
 																					id="arrow" /></i>
@@ -226,7 +226,7 @@
 																					id="coffee-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 20% <i><img
 																					src="../resources/bootstrap/images/greenup.png"
 																					id="arrow" /></i>
@@ -250,7 +250,7 @@
 																					id="bottle-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 30% <i><img
 																					src="../resources/bootstrap/images/reddown.png"
 																					id="arrow" /></i>
@@ -272,7 +272,7 @@
 																					id="ball-icon" /></i>
 																			</div>
 																			<div id="volume">5L</div>
-																			<div>
+																			<div class="per">
 																				last week 40% <i><img
 																					src="../resources/bootstrap/images/greenup.png"
 																					id="arrow" /></i>
@@ -294,36 +294,96 @@
 
 										</div>
 
+									</div>
+
+
+									<!-- REPORT PANE START -->
+									<div class="tab-pane fade" id="nav-profile" role="tabpanel"
+										aria-labelledby="nav-profile-tab">
+
+
+										<!-- Report-card -->
+										<div class="report-card" style="margin-top: 0;">
+											<div class="report-card-header">[분석] 8월 4주차 주간 리포트</div>
+											<div class="row report-card-body">
+												<div
+													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
+													이번 주는 캔 배출이 조금 많은 편이네요!</div>
+												<div
+													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
+													<i><img src="../resources/bootstrap/images/can.png" /></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="report-card">
+											<div class="report-card-header">[분석] 배출량 감소 목표치</div>
+											<div class="row report-card-body">
+												<div
+													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
+													목표치에 맞추려면 하루에 20L씩 배출 필요<br> 이 추세라면 이번 달 배출량 423L 예상
+												</div>
+												<div
+													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
+													<i><img
+														src="../resources/bootstrap/images/report_bar.png" /></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="report-card">
+											<div class="report-card-header">[분석] SSG BIN 비움 주기</div>
+											<div class="row report-card-body">
+												<div
+													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
+													아주 좋습니다!<br> 담당 구역 매장들의 일 평균 SSG BIN 비움 횟수는 2.4회 입니다.
+												</div>
+												<div
+													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
+													<i><img
+														src="../resources/bootstrap/images/report_trash.png" /></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="report-card" style="margin-top: 0;">
+											<div class="report-card-header">[정보] 스타벅스 친환경 경영 선언</div>
+											<div class="row report-card-body">
+												<div
+													class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 report-card-content">
+													"열심히 일한 플라스틱 빨대, 떠나라!"</div>
+												<div
+													class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 report-card-icon">
+													<i><img
+														src="../resources/bootstrap/images/report_paper.png" /></i>
+												</div>
+											</div>
+										</div>
 
 
 									</div>
-									<div class="tab-pane fade" id="nav-profile" role="tabpanel"
-										aria-labelledby="nav-profile-tab">22</div>
+									<!-- REPORT PANE END -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-md-12">
-					<div class="copyright">
-						<p>
-							Copyright © 2018 Colorlib. All rights reserved. Template by <a
-								href="https://colorlib.com">Colorlib</a>.
-						</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<p>
+								Copyright © 2018 Colorlib. All rights reserved. Template by <a
+									href="https://colorlib.com">Colorlib</a>.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
 	<!-- END MAIN CONTENT-->
 	<!-- END PAGE CONTAINER-->
-	</div>
-
-	</div>
 
 	<!-- Jquery JS-->
 	<script src="../resources/bootstrap/vendor/jquery-3.2.1.min.js"></script>

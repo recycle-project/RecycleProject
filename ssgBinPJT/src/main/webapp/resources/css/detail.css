@@ -19,7 +19,10 @@ nav > div a.nav-item.nav-link.active
 
 nav > div a.nav-item.nav-link.active:after
  {
+<<<<<<< HEAD
   /* content: ""; */
+=======
+>>>>>>> df0184f2748990db5e774387f51fe5884ead03b8
   position: relative;
   bottom: -60px;
   left: -10%;
