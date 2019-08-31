@@ -6,5 +6,5 @@ import java.util.List;
 import com.sinc.ssgbin.user.model.vo.UserVO;
 
 public interface FCMService {
-	public int sendNotification(List<UserVO> users, HashMap<String, String> push);
+	public int sendNotification(List<UserVO> users, HashMap<String, Object> push);
 }

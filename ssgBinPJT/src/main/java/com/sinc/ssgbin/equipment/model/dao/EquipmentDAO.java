@@ -8,6 +8,7 @@ import com.sinc.ssgbin.user.model.vo.UserVO;
 
 public interface EquipmentDAO {
 	public List<UserVO> getUsersWithEquipId(EquipmentVO equip);
-	public HashMap<String, String> getPushContentWithEquipId(EquipmentVO equip);
+	public HashMap<String, Object> getPushContentWithEquipId(EquipmentVO equip);
 	public EquipmentVO getEquipmentWithId(int id);
+	public int updatePower(EquipmentVO equip);
 }
