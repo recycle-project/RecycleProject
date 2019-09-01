@@ -80,8 +80,7 @@
 						<div class="account-wrap">
 							<div class="account-item clearfix js-item-menu">
 								<div class="content">
-									<a class="js-acc-btn" href="#">${user.employee_name}
-										${user.position } 님 </a>
+									<a class="js-acc-btn" href="#">${user.employee_name} 님 </a>
 								</div>
 								<div class="account-dropdown js-dropdown">
 									<div class="account-dropdown__footer">

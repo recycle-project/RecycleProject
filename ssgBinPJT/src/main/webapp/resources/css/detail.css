@@ -59,7 +59,7 @@ nav > div a.nav-item.nav-link:focus
 	border-radius : 0;
 }
 #subtab .nav-link {
-	padding: 0.5rem 0.75rem;
+	padding: 0.5rem 0.25rem;
 }
 .report-card-icon {
 	line-height : 100%;
@@ -73,9 +73,6 @@ nav > div a.nav-item.nav-link:focus
 .report-card-class {
 	padding : 0.5rem;
 	border-top : 1px solid #ddd;
-}
-.report-card-class:last-child {
-	border-bottom : 1px solid #ddd;
 }
 .report-card {
 	display : grid;

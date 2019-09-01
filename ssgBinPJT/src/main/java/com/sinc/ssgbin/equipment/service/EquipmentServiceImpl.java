@@ -23,7 +23,7 @@ public class EquipmentServiceImpl implements EquipmentService {
 	}
 	
 	@Override
-	public HashMap<String, String> getPushContentWithEquipId(EquipmentVO equip){
+	public HashMap<String, Object> getPushContentWithEquipId(EquipmentVO equip){
 		System.out.println("EquipmentServiceImpl getPushContentWithEquipId()");
 		return dao.getPushContentWithEquipId(equip);
 	}
@@ -32,5 +32,17 @@ public class EquipmentServiceImpl implements EquipmentService {
 	public EquipmentVO getEquipmentWithId(int id) {
 		System.out.println("EquipmentServiceImpl getEquipmentWithId()");
 		return dao.getEquipmentWithId(id);
+	}
+	
+	@Override
+	public int updateUltra(EquipmentVO equip) {
+		System.out.println("EquipmentServiceImpl updateUltra()");
+		return dao.updateUltra(equip);
+	}
+
+	@Override
+	public int updatePower(EquipmentVO equip) {
+		System.out.println("EquipmentServiceImpl updatePower()");
+		return dao.updatePower(equip);
 	}
 }
