@@ -1,0 +1,25 @@
+.table-earning thead th, .table-earning tbody td {
+	padding-left : 13px;
+	padding-right : 4px;
+}
+.table-earning thead th {
+	background-color : #006e45;
+}
+@media (max-width: 767px) {
+	.rs-select2--light {
+	    display: inline-block !important;
+	}
+}
+.table-data__tool {
+    margin-bottom: 0;
+}
+.au-btn-filter {
+	border : 1px solid #006e45;
+	border-radius : 10px;
+}
+.rs-select2--light .select2-container--open .select2-dropdown {
+	margin-top : 0px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #006e45;
+}

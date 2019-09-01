@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.sinc.ssgbin.equipment.model.vo.EquipmentVO;
 import com.sinc.ssgbin.equipment.service.EquipmentService;
 import com.sinc.ssgbin.fcm.service.FCMService;
+import com.sinc.ssgbin.log.model.vo.LogVO;
+import com.sinc.ssgbin.log.service.LogService;
 import com.sinc.ssgbin.user.model.vo.UserVO;
 import com.sinc.ssgbin.user.service.UserService;
 
 /*
  * 김응준. 2019-08-28
- * Android와 통신하는 컨트롤러
+ * Android와 통신하고 이상현상에 대해 Push Notification을 주는 컨트롤러
  */
 
 @Controller
@@ -31,6 +33,9 @@ public class FCMCtrl {
 	
 	@Resource(name="fcmService")
 	private FCMService fcmService;
+	
+	@Resource(name="logService")
+	private LogService logService;
 	
 	// Android에서 디바이스 토큰을 받아서 DB에 저장
 	@RequestMapping("/token")
@@ -65,12 +70,21 @@ public class FCMCtrl {
 		int equipmentId = 62;
 		equip.setEquipment_id(equipmentId);
 		
-		// 1. Log DB에 심어야지!
-		
-		// 2. 해당 equip가 있는 store의 employee list 획득 (단, token 값이 null이 아닌 경우에만!)
+		// 1. 해당 equip가 있는 store의 employee list 획득 (단, token 값이 null이 아닌 경우에만!)
 		List<UserVO> users = equipmentService.getUsersWithEquipId(equip);
-		// 3. 푸시 메시지에 들어갈 내용(매장 이름, 기기 이름)을 획득
+		// 2. 푸시 메시지에 들어갈 내용(매장 이름, 기기 이름)을 획득
 		HashMap<String, String> push = equipmentService.getPushContentWithEquipId(equip);
+		// 3. log DB에 기록
+		LogVO log = new LogVO();
+		log.setCategory(push.get("CATEGORY"));
+		log.setContents("꺼짐");
+		log.setEquipment_id(equip.getEquipment_id());
+		if(logService.writeLog(log) == 1) {
+			System.out.println("log 기록 성공!");
+		} else {
+			System.out.println("log 기록 실패!");
+		}
+		// 4. token 값을 통해 푸시 메시지 보냄
 		if(users.size() != 0 
 				&& push.get("STORE_NAME") != null 
 				&& push.get("CATEGORY") != null ) {
@@ -80,8 +94,8 @@ public class FCMCtrl {
 			}
 			System.out.println("push: store="+push.get("STORE_NAME")+", equip="+push.get("CATEGORY"));
 			
-			// 4. token 값을 통해 푸시 메시지를 보냄
-			int result = fcmService.sendNotification(users, push);
+			// send push notification to users
+			int result = fcmService.sendNotification(users, push); // fcmService.sendNotification(users, push);
 			if(result == 1) {
 				// 푸시 성공
 			} else {

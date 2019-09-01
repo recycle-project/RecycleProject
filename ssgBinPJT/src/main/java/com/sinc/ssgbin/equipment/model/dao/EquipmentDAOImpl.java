@@ -28,4 +28,10 @@ public class EquipmentDAOImpl implements EquipmentDAO{
 		return session.selectOne("com.sinc.ssgbin.equipment.push", equip);
 	}
 
+	@Override
+	public EquipmentVO getEquipmentWithId(int id) {
+		System.out.println("EquipmentDAOImpl getEquipmentWithId()");
+		return session.selectOne("com.sinc.ssgbin.equipment.get", id);
+	}
+
 }

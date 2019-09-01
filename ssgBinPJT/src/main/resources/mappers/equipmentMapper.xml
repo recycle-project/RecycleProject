@@ -9,7 +9,7 @@
 		resultType="equipmentVO">
 		SELECT EQUIPMENT_ID, EQUIPMENT_NAME, CATEGORY, CAPACITY, IS_ON, SERIAL_NUMBER, STORE_ID
 		FROM EQUIPMENT
-		WHERE STORE_ID = #{store_id}
+		WHERE STORE_ID = #{store_id} and category = '쓰레기통'
 	</select>
 	<select id="userList"
 		parameterType="equipmentVO"
@@ -29,6 +29,13 @@
 		FROM STORE
 		JOIN EQUIPMENT
 		USING (STORE_ID)
+		WHERE EQUIPMENT_ID = #{equipment_id}
+	</select>
+	<select id="get"
+		parameterType="Integer"
+		resultType="equipmentVO">
+		SELECT *
+		FROM EQUIPMENT
 		WHERE EQUIPMENT_ID = #{equipment_id}
 	</select>
 </mapper> 
