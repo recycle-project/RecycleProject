@@ -28,4 +28,10 @@ public class EquipmentServiceImpl implements EquipmentService {
 		return dao.getPushContentWithEquipId(equip);
 	}
 
+	@Override
+	public int updateUltra(EquipmentVO equip) {
+		System.out.println("EquipmentServiceImpl updateUltra()");
+		return dao.updateUltra(equip);
+	}
+
 }

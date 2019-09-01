@@ -28,4 +28,10 @@ public class EquipmentDAOImpl implements EquipmentDAO{
 		return session.selectOne("com.sinc.ssgbin.equipment.push", equip);
 	}
 
+	@Override
+	public int updateUltra(EquipmentVO equip) {
+		System.out.println("EquipmentDAOImpl updateUltra()");
+		return session.update("com.sinc.ssgbin.equipment.update", equip);
+	}
+
 }

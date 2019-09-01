@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.sinc.ssgbin.store.model.vo.StoreVO;
 import com.sinc.ssgbin.user.model.vo.UserVO;
 import com.sinc.ssgbin.user.service.UserService;
 

@@ -78,8 +78,7 @@
 						<div class="account-wrap">
 							<div class="account-item clearfix js-item-menu">
 								<div class="content">
-									<a class="js-acc-btn" href="#">${user.employee_name}
-										${user.position } 님 </a>
+									<a class="js-acc-btn" href="#">${user.employee_name} 님 </a>
 								</div>
 								<div class="account-dropdown js-dropdown">
 									<div class="account-dropdown__footer">
@@ -224,12 +223,19 @@
 										</div>
 									</div>
 								</div>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-1 col-sm-1 col-md-3 col-lg-4 col-xl-4"></div>
+							<div class="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+							<div class="refresh"><button class="refresh-btn" id="refresh-btn">새로고침</button></div>
 							</div>
+							<div class="col-1 col-sm-1 col-md-3 col-lg-4 col-xl-4"></div>
 						</div>
 						<div class="row m-t-25" id="switch_n"
 							style="padding-left: 7.5px; padding-right: 7.5px;">
 							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
-								<div class="overview-item overview-item--c1 turn-on">
+								<div class="overview-item overview-item--c1">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
 											<div class="text_style">
@@ -243,7 +249,7 @@
 								</div>
 							</div>
 							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
-								<div class="overview-item overview-item--c1 turn-on">
+								<div class="overview-item overview-item--c1">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
 											<div class="text_style">
@@ -257,12 +263,12 @@
 								</div>
 							</div>
 							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
-								<div class="overview-item overview-item--c1 turn-off">
+								<div class="overview-item overview-item--c1">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
 											<div class="text_style">
 												<div>
-													<span>전등</span>
+													<span>조명</span>
 												</div>
 											</div>
 
@@ -271,7 +277,7 @@
 								</div>
 							</div>
 							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 testsize">
-								<div class="overview-item overview-item--c1 turn-on">
+								<div class="overview-item overview-item--c1">
 									<div class="overview__inner">
 										<div class="overview-box clearfix">
 											<div class="text_style">
@@ -370,55 +376,81 @@
 					storeID = $("#navbar-sidebar li:first-child").children().attr("id");
 					$("#navbar-sidebar li:first-child").addClass("active");
 				}
-				$.ajax({
-					url : "/ssgBin/dashboard/status",
-					data : {store_id : storeID},
-					method : "POST",
-					dataType : "json"
-				})
-				.done(function(result) {	
-					if (result.length > 4) {
-						floor2 = $("#bin-1").clone();
-						$("#bin-1").after(floor2.attr("id", "bin-2"));
-						$("#bin-1").after("<hr class='trash-hr'>");
-					} else  {
-						
-					}
-					$.each(result, function(idx, item) {
-						$(".overview-item").each(function(idx2, item2) {
-							if (idx == idx2) {
-								$(item2).find(".bin-name").text(item.equipment_name);
-								$(item2).find(".label").text(item.capacity + "%");
-								if(item.capacity >= 0 && item.capacity < 25) {
-									$(item2).find(".pie-wrapper").addClass("progress-safe");
-									$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
-								} else if(item.capacity >= 25 && item.capacity < 50) {
-									$(item2).find(".pie-wrapper").addClass("progress-normal");
-									$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
-								} else if(item.capacity >= 50 && item.capacity < 75) {
-									$(item2).find(".pie-wrapper").addClass("progress-ready");
-									$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
-								} else if(item.capacity >= 75 && item.capacity < 100) {
-									$(item2).find(".pie-wrapper").addClass("progress-danger");
-									$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
-								}
-							}
-						});
-					});
-				});
+				refreshStatus();
 			});
 		});
 		
-		$(".turn-on").click(function() {
-			console.log("turn on click");
-			$(this).toggleClass("turn-on");
-			$(this).toggleClass("turn-off");
+		$("#refresh-btn").click(function() {
+			refreshStatus();
 		});
-		$(".turn-off").click(function() {
-			console.log("turn off click");
-			$(this).toggleClass("turn-off");
-			$(this).toggleClass("turn-on");
-		});
+		function clickFn(btn) {
+			$(btn).toggleClass("turn-on");
+			$(btn).toggleClass("turn-off");
+			
+		}
+		
+		function refreshStatus () {
+			$.ajax({
+				url : "/ssgBin/dashboard/status",
+				data : {store_id : storeID},
+				method : "POST",
+				dataType : "json"
+			})
+			.done(function(result) {
+				var binCnt = 0;
+				$.each(result, function(idx, item) {
+					
+					if (item.category == "쓰레기통") {
+						binCnt++;
+					}
+				});
+				if (binCnt > 4) {
+					if (result.length > 4) {
+						if ($("#bin-2").length == 0) {
+							floor2 = $("#bin-1").clone();
+							$("#bin-1").after(floor2.attr("id", "bin-2"));
+							$("#bin-1").after("<hr class='trash-hr'>");
+						}
+					}
+				}
+				$.each(result, function(idx, item) {
+					
+					$(".overview-item").each(function(idx2, item2) {
+						if (idx == idx2 && item.category == "쓰레기통") {
+							$(item2).find(".bin-name").text(item.equipment_name);
+							$(item2).find(".label").text(item.capacity + "%");
+							$(item2).find(".pie-wrapper").removeClass("progress-safe");
+							$(item2).find(".pie-wrapper").removeClass("progress-normal");
+							$(item2).find(".pie-wrapper").removeClass("progress-ready");
+							$(item2).find(".pie-wrapper").removeClass("progress-danger");
+							if(item.capacity >= 0 && item.capacity < 25) {
+								$(item2).find(".pie-wrapper").addClass("progress-safe");
+								$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
+							} else if(item.capacity >= 25 && item.capacity < 50) {
+								$(item2).find(".pie-wrapper").addClass("progress-normal");
+								$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
+							} else if(item.capacity >= 50 && item.capacity < 75) {
+								$(item2).find(".pie-wrapper").addClass("progress-ready");
+								$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
+							} else if(item.capacity >= 75 && item.capacity < 100) {
+								$(item2).find(".pie-wrapper").addClass("progress-danger");
+								$(item2).find(".left-side").css("transform", "rotate("+item.capacity * 3.6+"deg)");
+							}
+						} else if (idx == idx2 && item.category != "쓰레기통") {
+							if($(item2).find("span").text() == item.category) {
+								if (item.is_on == "T") {
+									$(item2).attr("class", $(item2).attr("class") + " turn-on");
+								} else {
+									$(item2).attr("class", $(item2).attr("class") + " turn-off");
+								}
+							}
+						}
+					});
+				});
+			});
+			
+			
+		}
 		
 	</script>
 </body>

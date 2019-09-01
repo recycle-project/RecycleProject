@@ -9,4 +9,5 @@ import com.sinc.ssgbin.user.model.vo.UserVO;
 public interface EquipmentDAO {
 	public List<UserVO> getUsersWithEquipId(EquipmentVO equip);
 	public HashMap<String, String> getPushContentWithEquipId(EquipmentVO equip);
+	public int updateUltra(EquipmentVO equip);
 }
