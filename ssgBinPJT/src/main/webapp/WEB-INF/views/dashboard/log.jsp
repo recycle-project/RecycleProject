@@ -79,8 +79,7 @@
 						<div class="account-wrap">
 							<div class="account-item clearfix js-item-menu">
 								<div class="content">
-									<a class="js-acc-btn" href="#">${user.employee_name}
-										${user.position } 님 </a>
+									<a class="js-acc-btn" href="#">${user.employee_name} 님 </a>
 								</div>
 								<div class="account-dropdown js-dropdown">
 									<div class="account-dropdown__footer">
@@ -226,6 +225,39 @@
 	<!-- Main JS-->
 	<script src="../resources/bootstrap/js/main.js"></script>
 	<script>
+		var storeID;
+		$(document).ready(function() {
+			$("#navbar-sidebar").empty();
+			$("#navbar-mobile-list").empty();
+			$.ajax({
+				url : "/ssgBin/dashboard/list",
+				data : {employee_id : ${user.employee_id}},
+				method : "GET",
+				dataType : "json"
+			})
+			.done(function(result) {
+				$.each(result, function(idx, item) {
+					$("#navbar-sidebar").append("<li><a href='main?id="+item.store_id+"' id='"+item.store_id+"'>"+item.store_name+"</a></li>");
+					$("#navbar-mobile-list").append("<li><a href='main?id="+item.store_id+"' id=m'"+item.store_id+"'>"+item.store_name+"</a></li>");
+				});
+				
+				
+				var queryString = new URLSearchParams(window.location.search);
+				
+				if (queryString.has("id")) {
+					$("#navbar-sidebar li").removeClass("active");
+					$("#navbar-sidebar li").each(function(idx, item) {
+						if ($(item).children().attr("id") == queryString.get("id")) {
+							storeID = queryString.get("id");
+							$(item).addClass("active");
+						}
+					});
+				} else {
+					storeID = $("#navbar-sidebar li:first-child").children().attr("id");
+					$("#navbar-sidebar li:first-child").addClass("active");
+				}
+			});
+		});
 		$.ajax({
 			url : "/ssgBin/dashboard/loglist",
 			method : "GET",

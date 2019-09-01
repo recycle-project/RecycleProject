@@ -33,5 +33,11 @@ public class EquipmentDAOImpl implements EquipmentDAO{
 		System.out.println("EquipmentDAOImpl getEquipmentWithId()");
 		return session.selectOne("com.sinc.ssgbin.equipment.get", id);
 	}
+	
+	@Override
+	public int updateUltra(EquipmentVO equip) {
+		System.out.println("EquipmentDAOImpl updateUltra()");
+		return session.update("com.sinc.ssgbin.equipment.update", equip);
+	}
 
 }

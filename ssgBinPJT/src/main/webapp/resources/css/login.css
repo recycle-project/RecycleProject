@@ -54,3 +54,8 @@ input[name='pwd'] {
 	font-family : none;
 	font-size : 17px;
 }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #006e45;
+    border-color: #006e45;
+}

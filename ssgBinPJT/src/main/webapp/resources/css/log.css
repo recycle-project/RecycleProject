@@ -1,6 +1,6 @@
 .table-earning thead th, .table-earning tbody td {
-	padding-left : 13px;
-	padding-right : 4px;
+	padding-left : 0.25rem;
+	padding-right : 0.25rem;
 }
 .table-earning thead th {
 	background-color : #006e45;
@@ -16,6 +16,9 @@
 .au-btn-filter {
 	border : 1px solid #006e45;
 	border-radius : 10px;
+	background-color: #006e45;
+    color: #fff;
+    padding: 0.05rem 1rem;
 }
 .rs-select2--light .select2-container--open .select2-dropdown {
 	margin-top : 0px;

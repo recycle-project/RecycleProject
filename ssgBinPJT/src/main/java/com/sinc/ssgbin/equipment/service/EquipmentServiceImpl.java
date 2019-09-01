@@ -33,4 +33,10 @@ public class EquipmentServiceImpl implements EquipmentService {
 		System.out.println("EquipmentServiceImpl getEquipmentWithId()");
 		return dao.getEquipmentWithId(id);
 	}
+	
+	@Override
+	public int updateUltra(EquipmentVO equip) {
+		System.out.println("EquipmentServiceImpl updateUltra()");
+		return dao.updateUltra(equip);
+	}
 }
