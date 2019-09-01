@@ -23,7 +23,7 @@ public class EquipmentDAOImpl implements EquipmentDAO{
 	}
 	
 	@Override
-	public HashMap<String, String> getPushContentWithEquipId(EquipmentVO equip){
+	public HashMap<String, Object> getPushContentWithEquipId(EquipmentVO equip){
 		System.out.println("EquipmentDAOImpl getPushContentWithEquipId()");
 		return session.selectOne("com.sinc.ssgbin.equipment.push", equip);
 	}
@@ -38,6 +38,12 @@ public class EquipmentDAOImpl implements EquipmentDAO{
 	public int updateUltra(EquipmentVO equip) {
 		System.out.println("EquipmentDAOImpl updateUltra()");
 		return session.update("com.sinc.ssgbin.equipment.update", equip);
+	}
+
+	@Override
+	public int updatePower(EquipmentVO equip) {
+		System.out.println("EquipmentDAOImpl updatePower()");
+		return session.update("com.sinc.ssgbin.equipment.updatePower", equip);
 	}
 
 }

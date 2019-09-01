@@ -19,7 +19,7 @@ public class FCMServiceImpl implements FCMService{
 	// params: users는 푸시를 받을 사람들이고, push는 STORE_NAME, CATEGORY를 key로 하여 푸시 메시지 내용을 생성하는데 사용됨.
 	// rlt: 1=success, -1=fail
 	@Override
-	public int sendNotification(List<UserVO> users, HashMap<String, String> push) {
+	public int sendNotification(List<UserVO> users, HashMap<String, Object> push) {
 		System.out.println("FCMServiceImpl sendNotification()");
 		
 		// firebase cloud messaging server key
@@ -38,6 +38,7 @@ public class FCMServiceImpl implements FCMService{
 				
 				// specific device token
 				String token = users.get(i).getToken();
+				String store_id = String.valueOf(push.get("STORE_ID"));
 				// 매장 이름은 Store
 				String title = push.get("STORE_NAME")+" 매장 알림";
 				// 기기 이름은 Equipment
@@ -45,7 +46,7 @@ public class FCMServiceImpl implements FCMService{
 				// notification id random 생성
 				double randomValue = Math.random();
 				int noti_id = (int)(randomValue*1000);
-				String input = "{\"data\" : {\"title\" : \"" + title + "\", \"content\" : \"" + content + "\", \"noti_id\" : \"" + noti_id + "\"}, \"to\":\"" + token + "\"}";
+				String input = "{\"data\" : {\"title\" : \"" + title + "\", \"content\" : \"" + content + "\", \"noti_id\" : \"" + noti_id + "\", \"employee_name\" : \"" + users.get(i).getEmployee_name() +"\", \"pwd\" : \"" + users.get(i).getPwd() + "\", \"store_id\" : \"" + store_id + "\"}, \"to\":\"" + token + "\"}";
 
 				OutputStream os = conn.getOutputStream();
 		        

@@ -4,9 +4,11 @@ import javax.annotation.Resource;
 import org.springframework.http.HttpStatus;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.sinc.ssgbin.equipment.model.vo.EquipmentVO;
 import com.sinc.ssgbin.equipment.service.EquipmentService;
@@ -35,6 +37,7 @@ public class CommuniationCtrl {
 	// PI에서 POST로 equipment_id, contents data를 전달받음
 	// requests.post('http://0.0.0.0:8088/ssgBin/pi/writeLog', data = {'equipment_id':'62', 'contents':'로그 내용이 들어갑니다.'}
 	@RequestMapping("pi/writeLog")
+	@ResponseStatus(HttpStatus.OK)
 	public void writeLog(@RequestParam int equipment_id, @RequestParam String contents) {
 		System.out.println("CommunicationCtrl writeLog()");
 		
