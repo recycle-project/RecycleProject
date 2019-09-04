@@ -389,7 +389,7 @@
 			
 		}
 		
-		function refreshStatus () {
+		function refreshStatus () {s
 			$.ajax({
 				url : "/ssgBin/dashboard/status",
 				data : {store_id : storeID},
@@ -414,7 +414,6 @@
 					}
 				}
 				$.each(result, function(idx, item) {
-					
 					$(".overview-item").each(function(idx2, item2) {
 						if (idx == idx2 && item.category == "쓰레기통") {
 							$(item2).find(".bin-name").text(item.equipment_name);
@@ -438,11 +437,14 @@
 							}
 						} else if (idx == idx2 && item.category != "쓰레기통") {
 							if($(item2).find("span").text() == item.category) {
+								$(item2).removeClass("turn-on");
+								$(item2).removeClass("turn-off");
 								if (item.is_on == "T") {
 									$(item2).attr("class", $(item2).attr("class") + " turn-on");
 								} else {
 									$(item2).attr("class", $(item2).attr("class") + " turn-off");
 								}
+
 							}
 						}
 					});
