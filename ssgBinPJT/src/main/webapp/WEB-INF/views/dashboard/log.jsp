@@ -246,15 +246,24 @@
 				
 				if (queryString.has("id")) {
 					$("#navbar-sidebar li").removeClass("active");
+					$("#navbar-mobile-list li").removeClass("active");
 					$("#navbar-sidebar li").each(function(idx, item) {
 						if ($(item).children().attr("id") == queryString.get("id")) {
 							storeID = queryString.get("id");
 							$(item).addClass("active");
 						}
 					});
+					$("#navbar-mobile-list li").each(function(idx, item) {
+						if ($(item).children().attr("id") == 'm' + queryString.get("id")) {
+							storeID = queryString.get("id");
+							$(item).addClass("active");
+						}
+					});
 				} else {
 					storeID = $("#navbar-sidebar li:first-child").children().attr("id");
+					storeID = $("#navbar-mobile-list li:first-child").children().attr("id").substr(1);
 					$("#navbar-sidebar li:first-child").addClass("active");
+					$("#navbar-mobile-list li:first-child").addClass("active");
 				}
 			});
 		});

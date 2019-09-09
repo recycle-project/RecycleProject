@@ -358,7 +358,7 @@
 			.done(function(result) {
 				$.each(result, function(idx, item) {
 					$("#navbar-sidebar").append("<li><a href='main?id="+item.store_id+"' id='"+item.store_id+"'>"+item.store_name+"</a></li>");
-					$("#navbar-mobile-list").append("<li><a href='main?id="+item.store_id+"' id=m'"+item.store_id+"'>"+item.store_name+"</a></li>");
+					$("#navbar-mobile-list").append("<li><a href='main?id="+item.store_id+"' id='m"+item.store_id+"'>"+item.store_name+"</a></li>");
 				});
 				
 				
@@ -366,15 +366,24 @@
 				
 				if (queryString.has("id")) {
 					$("#navbar-sidebar li").removeClass("active");
+					$("#navbar-mobile-list li").removeClass("active");
 					$("#navbar-sidebar li").each(function(idx, item) {
 						if ($(item).children().attr("id") == queryString.get("id")) {
 							storeID = queryString.get("id");
 							$(item).addClass("active");
 						}
 					});
+					$("#navbar-mobile-list li").each(function(idx, item) {
+						if ($(item).children().attr("id") == 'm' + queryString.get("id")) {
+							storeID = queryString.get("id");
+							$(item).addClass("active");
+						}
+					});
 				} else {
 					storeID = $("#navbar-sidebar li:first-child").children().attr("id");
+					storeID = $("#navbar-mobile-list li:first-child").children().attr("id").substr(1);
 					$("#navbar-sidebar li:first-child").addClass("active");
+					$("#navbar-mobile-list li:first-child").addClass("active");
 				}
 				refreshStatus();
 			});
@@ -389,7 +398,7 @@
 			
 		}
 		
-		function refreshStatus () {s
+		function refreshStatus () {
 			$.ajax({
 				url : "/ssgBin/dashboard/status",
 				data : {store_id : storeID},

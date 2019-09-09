@@ -293,26 +293,17 @@
 
 
 										<!-- Report-card -->
-										<div class="report-card-class reoport-card-date">2019년 8월 30일</div>
-										<div class="report-card-class report-card">
-											<div class="report-card-header">[분석] 8월 4주차 주간 리포트</div>
-											<div class="report-card-icon">
-												<img src="../resources/bootstrap/images/can-gray.png" />
-											</div>
-											<div class="report-card-content">
-													이번 주는 캔 배출이 조금 많은 편이네요!
-											</div>
-										</div>
+										
 										
 										<div class="report-card-class reoport-card-date">2019년 8월 29일</div>
 										<div class="report-card-class report-card">
-											<div class="report-card-header">[분석] 배출량 감소 목표치</div>
+											<div class="report-card-header">[분석] 예상 처리 비용</div>
 											<div class="report-card-icon">
 												<img
 													src="../resources/bootstrap/images/bar-gray.png" />
 											</div>
 											<div class="report-card-content">
-												목표치에 맞추려면 하루에 20L씩 배출 필요<br> 이 추세라면 이번 달 배출량 423L 예상
+												이 추세라면 이번 달 쓰레기 처리 비용 500만원 예상 <br> 다른 지역에 비해 50만원 많아요.
 											</div>
 										</div>
 

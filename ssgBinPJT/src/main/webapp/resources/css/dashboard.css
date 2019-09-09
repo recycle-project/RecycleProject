@@ -12,6 +12,9 @@
  .navbar-sidebar .navbar__list li.active > a {
 	color : #006e45;
 }
+.navbar-mobile__list .navbar-mobile-sub__list li.active > a {
+    color: #006e45;
+}
 @media (min-width: 991px) {
     .header-button {
         position : fixed;
