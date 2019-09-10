@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1013164945658",
+    "firebase_url": "https://ssg-bin.firebaseio.com",
+    "project_id": "ssg-bin",
+    "storage_bucket": "ssg-bin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013164945658:android:470435d0fda2c42a",
+        "android_client_info": {
+          "package_name": "com.sinc.ssgbin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013164945658-5oi8pgh7sli4a1s60rrd834s8p057gge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCSB6Jr9feOx1jUXXvEx2zjOnFwL7q6dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013164945658-5oi8pgh7sli4a1s60rrd834s8p057gge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
