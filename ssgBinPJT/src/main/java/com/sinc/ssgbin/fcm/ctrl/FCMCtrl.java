@@ -82,7 +82,7 @@ public class FCMCtrl {
 		// 3. log DB에 기록
 		LogVO log = new LogVO();
 		log.setCategory(String.valueOf(push.get("CATEGORY")));
-		log.setContents("꺼짐");
+		log.setContents("내부 온도 상승");
 		log.setEquipment_id(equip.getEquipment_id());
 		
 		if(logService.writeLog(log) == 1) {
